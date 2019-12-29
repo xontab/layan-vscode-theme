@@ -1,0 +1,40 @@
+{
+	"name": "layan-theme",
+	"displayName": "Layan Theme",
+	"description": "A color theme inspired by Layan GTK Theme",
+	"version": "1.0.0",
+	"publisher": "xonTAB",
+	"author": {
+		"name": "Shaun Tabone",
+		"url": "http://xontab.com"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "GitHub",
+		"url": "https://github.com/xontab/layan-vscode-theme"
+	},
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Layan (Dark)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/layan-dark.json"
+			}
+		]
+	},
+	"keywords": [
+		"layan",
+		"dark",
+		"gtk",
+		"vinceliuice",
+		"dark"
+	],
+	"dependencies": {}
+}
