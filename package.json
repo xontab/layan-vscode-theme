@@ -14,7 +14,8 @@
 		"url": "https://github.com/xontab/layan-vscode-theme"
 	},
 	"engines": {
-		"vscode": "^1.13.0"
+		"vscode": "^1.13.0",
+		"sqlops": "*"
 	},
 	"categories": [
 		"Themes"
