@@ -1,8 +1,8 @@
 {
 	"name": "layan-theme",
 	"displayName": "Layan Theme",
-	"description": "A color theme inspired by Layan GTK Theme",
-	"version": "1.0.0",
+	"description": "A color theme inspired by Layan GTK Theme for VS Code, Cursor, Windsurf, VSCodium and other VS Code-based editors",
+	"version": "1.1.0",
 	"publisher": "xonTAB",
 	"author": {
 		"name": "Shaun Tabone",
@@ -10,9 +10,13 @@
 	},
 	"license": "MIT",
 	"repository": {
-		"type": "GitHub",
-		"url": "https://github.com/xontab/layan-vscode-theme"
+		"type": "git",
+		"url": "https://github.com/xontab/layan-vscode-theme.git"
 	},
+	"bugs": {
+		"url": "https://github.com/xontab/layan-vscode-theme/issues"
+	},
+	"homepage": "https://github.com/xontab/layan-vscode-theme#readme",
 	"engines": {
 		"vscode": "^1.13.0",
 		"sqlops": "*"
@@ -21,6 +25,10 @@
 		"Themes"
 	],
 	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#25252a",
+		"theme": "dark"
+	},
 	"contributes": {
 		"themes": [
 			{
@@ -35,7 +43,17 @@
 		"dark",
 		"gtk",
 		"vinceliuice",
-		"dark"
+		"theme",
+		"cursor",
+		"windsurf",
+		"vscodium",
+		"open-vsx"
 	],
+	"scripts": {
+		"package": "npx --yes @vscode/vsce@3 package",
+		"publish:vsce": "npx --yes @vscode/vsce@3 publish",
+		"publish:ovsx": "npx --yes ovsx@0.10 publish",
+		"publish": "npm run publish:vsce && npm run publish:ovsx"
+	},
 	"dependencies": {}
 }
