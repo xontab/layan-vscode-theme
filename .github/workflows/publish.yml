@@ -1,0 +1,39 @@
+name: Publish
+
+# Publishes to both the Visual Studio Marketplace (VS Code) and Open VSX
+# (Cursor, Windsurf, VSCodium, Gitpod, Eclipse Theia, ...) when a version tag is pushed.
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    # Each publish step is skipped when its token secret is not configured.
+    env:
+      VSCE_PAT: ${{ secrets.VSCE_PAT }}
+      OVSX_PAT: ${{ secrets.OVSX_PAT }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Package extension
+        run: npx --yes @vscode/vsce@3 package --out layan-theme.vsix
+
+      - name: Publish to Visual Studio Marketplace
+        if: ${{ env.VSCE_PAT != '' }}
+        run: npx --yes @vscode/vsce@3 publish --packagePath layan-theme.vsix
+
+      - name: Publish to Open VSX
+        if: ${{ env.OVSX_PAT != '' }}
+        run: npx --yes ovsx@0.10 publish layan-theme.vsix
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: layan-theme-vsix
+          path: layan-theme.vsix
