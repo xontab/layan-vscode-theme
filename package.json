@@ -2,7 +2,7 @@
 	"name": "layan-theme",
 	"displayName": "Layan Theme",
 	"description": "A color theme inspired by Layan GTK Theme for VS Code, Cursor, Windsurf, VSCodium and other VS Code-based editors",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"publisher": "xonTAB",
 	"author": {
 		"name": "Shaun Tabone",
