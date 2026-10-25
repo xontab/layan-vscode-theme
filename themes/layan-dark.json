@@ -7,6 +7,11 @@
 		"activityBar.inactiveForeground": "#bcbcfc",
 		"activityBarBadge.background": "#6586ff",
 		"button.background": "#4143e0",
+		"commandCenter.activeBackground": "#3a3a45",
+		"commandCenter.background": "#25252a",
+		"commandCenter.border": "#43444a",
+		"commandCenter.foreground": "#cccccc",
+		"commandCenter.inactiveBorder": "#43444a80",
 		"editor.background": "#25252a",
 		"editor.foreground": "#d4d4d4",
 		"editor.inactiveSelectionBackground": "#3a3d41",
@@ -31,7 +36,12 @@
 		"statusBarItem.remoteBackground": "#16825d",
 		"statusBarItem.remoteForeground": "#ffffff",
 		"tab.activeBackground": "#25252a",
-		"tab.inactiveBackground": "#31313a"
+		"tab.inactiveBackground": "#31313a",
+		"titleBar.activeBackground": "#31313a",
+		"titleBar.activeForeground": "#cccccc",
+		"titleBar.border": "#31313a",
+		"titleBar.inactiveBackground": "#31313a",
+		"titleBar.inactiveForeground": "#cccccc99"
 	},
 	"tokenColors": [
 		{
