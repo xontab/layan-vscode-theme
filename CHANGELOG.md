@@ -9,8 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Open VSX publishing, so the theme can be installed in Cursor, Windsurf, VSCodium, Gitpod and Eclipse Theia
 - GitHub Actions workflow that publishes to the Visual Studio Marketplace and Open VSX on version tags
 - Richer syntax highlighting: functions, types, classes, variables, parameters, constants, control-flow keywords, decorators and regex parts are now coloured, and semantic highlighting is enabled ([#1](https://github.com/xontab/layan-vscode-theme/issues/1))
+- Workbench colours now follow the Layan GTK dark palette: Layan backgrounds for menus, widgets, inputs and the editor, the Layan primary purple for selections, buttons, badges and focus, and Layan status colours for errors, warnings, git decorations and the terminal
 
 ### Fixed
+- Title bar and command center now match the theme chrome instead of the default grey
 - `header` scope was navy and unreadable on the dark background
 - Visual Studio Marketplace badge in the README (the old badge service is gone)
 
